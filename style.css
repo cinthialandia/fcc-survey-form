@@ -1,0 +1,142 @@
+/* general style */
+body {
+  font-family: "Armata", sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  background-color: pink;
+}
+h1 {
+  text-align: center;
+  margin: 60px;
+}
+h3 {
+  text-align: center;
+  padding-top: 25px;
+}
+main {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 15px;
+  background-color: white;
+}
+/* specific style */
+
+/* First container input*/
+.input {
+  display: flex;
+  margin: 1em;
+  align-items: center;
+}
+/*style input and label*/
+.input label {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+.input input {
+  width: 25%;
+  height: 1.5em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+/* Second container input*/
+.input2 {
+  display: flex;
+  margin: 1em;
+  align-items: center;
+}
+/*style input-label and select*/
+.input2 label {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+/*Preguntar porque no puede ser el mismo que los de arriba?*/
+.select {
+  width: 26.5%;
+  height: 2.5em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+/* third container input*/
+.radio {
+  display: flex;
+}
+/*style p input-label and select*/
+div p {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+/*Por que demonios no funciona esa mierda??*/
+.prueba {
+  margin: 0.2em;
+}
+
+/* fourth container input*/
+.inputexto {
+  display: flex;
+  margin: 1em;
+  align-items: center;
+}
+/*style input-label and select*/
+.inputexto label {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+/*Preguntar porque no puede ser el mismo que los de arriba?*/
+.inputexto select {
+  width: 26.5%;
+  height: 2.5em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+/* fifth container input*/
+.check {
+  display: flex;
+  margin: 1em;
+  align-items: start;
+}
+/*style check and checkbox */
+.check p {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+.cuadrito {
+  margin: 0.2em;
+}
+/* sixth container input*/
+.inputtax {
+  display: flex;
+  margin: 1em;
+  align-items: start;
+}
+/*style cquestion and text box*/
+.pregunta {
+  width: 50%;
+  text-align: right;
+  padding-right: 1em;
+}
+.respuesta {
+  width: 25%;
+}
+.respuesta textarea {
+  width: 100%;
+}
+/*submit*/
+.button {
+  background-color: #e059d9;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+.central {
+  display: flex;
+  justify-content: center;
+}

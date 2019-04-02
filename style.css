@@ -34,9 +34,9 @@ main {
 
 /*style all the label*/
 .label {
-  width: 50%;
   text-align: right;
   padding-right: 1em;
+  width: 50%;
 }
 
 .label-top {
@@ -46,7 +46,27 @@ main {
 /*style all the input*/
 .control {
   width: 25%;
-  padding: 0.2em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  height: 1.5em;
+  width: 2em;
+}
+
+select {
+  width: 70%;
+  height: 3em;
+}
+
+input[type="text"] {
+  height: 3em;
+  width: 70%;
+}
+
+textarea {
+  height: 10em;
+  width: 90%;
 }
 
 /*submit-button*/
@@ -66,17 +86,18 @@ main {
   border: 0px solid;
 }
 
-
-
 /* This query was necessary for changing the size of the elements on mobile cellphone*/
-@media only screen and (max-width: 600px) {
-  .input {
-    display: block;
+@media only screen and (max-width: 800px) {
+  .control-container {
+    flex-direction: column;
   }
 
-  .input label {
-    display: block;
-    width: 100%;
+  .label {
     text-align: left;
+    width: 100%;
+  }
+
+  .control {
+    width: 100%;
   }
 }

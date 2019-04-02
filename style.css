@@ -11,9 +11,8 @@ h1 {
   margin: 60px;
 }
 
-h3 {
+#description {
   text-align: center;
-  padding-top: 25px;
 }
 
 main {
@@ -54,12 +53,10 @@ input[type="radio"] {
   width: 2em;
 }
 
-select {
-  width: 70%;
-  height: 3em;
-}
-
-input[type="text"] {
+input[type="text"],
+select,
+input[type="email"],
+input[type="number"] {
   height: 3em;
   width: 70%;
 }

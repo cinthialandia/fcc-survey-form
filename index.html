@@ -11,30 +11,32 @@
 </head>
 
 <body>
-  <h1>Survey Form</h1>
+  <h1 id="title">Survey Form</h1>
   <main>
     <header>
-      <h3>Let us know how we can improve freeCodeCamp</h3>
-      <form>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form">
         <!-- Firts parte input type text-->
         <div class="control-container">
-          <div class="label"><label for="name">Name:</label></div>
-          <div class="control"><input type="text" placeholder="Enter your Name" name="name" /></div>
+          <div class="label"><label id="name-label" for="name">*Name:</label></div>
+          <div class="control"><input id="name" type="text" placeholder="Enter your Name" name="name" required /></div>
         </div>
         <div class="control-container">
-          <div class="label"><label for="email">Email:</label></div>
-          <div class="control"><input type="text" placeholder="Enter your Email" name="email" /></div>
+          <div class="label"><label id="email-label" for="email">*Email:</label></div>
+          <div class="control"><input id="email" type="email" placeholder="Enter your Email" name="email" required />
+          </div>
         </div>
         <div class="control-container">
-          <div class="label"><label for="age">Age:</label></div>
-          <div class="control"><input type="text" placeholder="Age" name="age" /></div>
+          <div class="label"><label id="number-label" for="age">*Age:</label></div>
+          <div class="control"><input id="number" type="number" placeholder="Age" name="age" min="10" max="100"
+              required /></div>
         </div>
 
         <!-- second part input select-->
         <div class="control-container">
           <div class="label"><label for="ocupation-select">Which option best describes your current role?</label></div>
           <div class="control">
-            <select class="select" name="ocupation-select">
+            <select id="dropdown" class="select" name="ocupation-select">
               <option value="student">Student</option>
               <option value="job">Full Time Job</option>
               <option value="learner">Full Time Learner</option>
@@ -47,7 +49,7 @@
         <div class="control-container">
           <div class="label">
             <p>
-              How likely is that you would recommend freeCodeCamp to a friend?
+              *How likely is that you would recommend freeCodeCamp to a friend?
             </p>
           </div>
 
@@ -93,47 +95,47 @@
           </div>
           <div class="control">
             <div>
-              <input type="checkbox" id="frontend" name="frontend" checked />
+              <input type="checkbox" id="frontend" name="projects" value="frontend" checked />
               <label for="frontend">Front-end Projects</label>
             </div>
             <div>
-              <input type="checkbox" id="backend" name="backend" />
+              <input type="checkbox" id="backend" name="projects" value="backend" />
               <label for="backend">Back-end Projects</label>
             </div>
             <div>
-              <input type="checkbox" id="data" name="data" />
+              <input type="checkbox" id="data" name="projects" value="data" />
               <label for="data">Data Visualization</label>
             </div>
             <div>
-              <input type="checkbox" id="challenges" name="challenges" />
+              <input type="checkbox" id="challenges" name="projects" value="challenges" />
               <label for="challenges">Challenges</label>
             </div>
             <div>
-              <input type="checkbox" id="open Source Community" name="open Source Community" />
+              <input type="checkbox" id="open Source Community" name="projects" value="open Source Community" />
               <label for="open Source Community">Open Source Community</label>
             </div>
             <div>
-              <input type="checkbox" id="gitter" name="gitter" />
+              <input type="checkbox" id="gitter" name="projects" value="gitter" />
               <label for="gitter">Gitter help rooms</label>
             </div>
             <div>
-              <input type="checkbox" id="video" name="video" />
+              <input type="checkbox" id="video" name="projects" value="video" />
               <label for="video">Videos</label>
             </div>
             <div>
-              <input type="checkbox" id="city" name="city" />
+              <input type="checkbox" id="city" name="projects" value="city" />
               <label for="city">City Meetups</label>
             </div>
             <div>
-              <input type="checkbox" id="wiki" name="wiki" />
+              <input type="checkbox" id="wiki" name="projects" value="wiki" />
               <label for="wiki">Wiki</label>
             </div>
             <div>
-              <input type="checkbox" id="forum" name="forum" />
+              <input type="checkbox" id="forum" name="projects" value="forum" />
               <label for="forum">Forum</label>
             </div>
             <div>
-              <input type="checkbox" id="additional" name="additional" />
+              <input type="checkbox" id="additional" name="projects" value="additional" />
               <label for="additional">Additional Courses</label>
             </div>
           </div>
@@ -149,13 +151,15 @@
         </div>
         <!--submit -->
         <div class="container-button">
-          <button class="submit-button" type="button">
+          <button id="submit" class="submit-button" type="submit">
             Submit
           </button>
         </div>
       </form>
     </header>
   </main>
+  <!-- Test the Freecodecamp -->
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

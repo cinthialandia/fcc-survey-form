@@ -5,128 +5,57 @@ body {
   margin: 0;
   background-color: pink;
 }
+
 h1 {
   text-align: center;
   margin: 60px;
 }
+
 h3 {
   text-align: center;
   padding-top: 25px;
 }
+
 main {
   max-width: 1200px;
   margin: 0px auto;
   padding: 15px;
   background-color: white;
+  width: 75%;
 }
+
 /* specific style */
-
-/* First container input*/
-.input {
+/* Div container with 2 boxes inside: One label and one input*/
+.control-container {
   display: flex;
   margin: 1em;
-  align-items: center;
-}
-/*style input and label*/
-.input label {
-  width: 50%;
-  text-align: right;
-  padding-right: 1em;
-}
-.input input {
-  width: 25%;
-  height: 1.5em;
-  padding: 0.5em;
-  font-size: 1em;
-}
-/* Second container input*/
-.input2 {
-  display: flex;
-  margin: 1em;
-  align-items: center;
-}
-/*style input-label and select*/
-.input2 label {
-  width: 50%;
-  text-align: right;
-  padding-right: 1em;
-}
-/*Preguntar porque no puede ser el mismo que los de arriba?*/
-.select {
-  width: 26.5%;
-  height: 2.5em;
-  padding: 0.5em;
-  font-size: 1em;
-}
-/* third container input*/
-.radio {
-  display: flex;
-}
-/*style p input-label and select*/
-div p {
-  width: 50%;
-  text-align: right;
-  padding-right: 1em;
-}
-/*Por que demonios no funciona esa mierda??*/
-.prueba {
-  margin: 0.2em;
+  align-items: baseline;
 }
 
-/* fourth container input*/
-.inputexto {
-  display: flex;
-  margin: 1em;
-  align-items: center;
-}
-/*style input-label and select*/
-.inputexto label {
+/*style all the label*/
+.label {
   width: 50%;
   text-align: right;
   padding-right: 1em;
 }
-/*Preguntar porque no puede ser el mismo que los de arriba?*/
-.inputexto select {
-  width: 26.5%;
-  height: 2.5em;
-  padding: 0.5em;
-  font-size: 1em;
+
+.label-top {
+  align-self: flex-start;
 }
-/* fifth container input*/
-.check {
-  display: flex;
-  margin: 1em;
-  align-items: start;
-}
-/*style check and checkbox */
-.check p {
-  width: 50%;
-  text-align: right;
-  padding-right: 1em;
-}
-.cuadrito {
-  margin: 0.2em;
-}
-/* sixth container input*/
-.inputtax {
-  display: flex;
-  margin: 1em;
-  align-items: start;
-}
-/*style cquestion and text box*/
-.pregunta {
-  width: 50%;
-  text-align: right;
-  padding-right: 1em;
-}
-.respuesta {
+
+/*style all the input*/
+.control {
   width: 25%;
+  padding: 0.2em;
 }
-.respuesta textarea {
-  width: 100%;
+
+/*submit-button*/
+.container-button {
+  display: flex;
+  justify-content: center;
 }
-/*submit*/
-.button {
+
+.submit-button {
   background-color: #e059d9;
   border-radius: 4px;
   color: white;
@@ -136,7 +65,18 @@ div p {
   margin: 10px;
   border: 0px solid;
 }
-.central {
-  display: flex;
-  justify-content: center;
+
+
+
+/* This query was necessary for changing the size of the elements on mobile cellphone*/
+@media only screen and (max-width: 600px) {
+  .input {
+    display: block;
+  }
+
+  .input label {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }

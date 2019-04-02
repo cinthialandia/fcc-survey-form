@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Armata"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <h1>Survey Form</h1>
-    <main>
-      <header>
-        <h3>Let us know how we can improve freeCodeCamp</h3>
-        <form>
-          <!-- Firts parte input type text-->
-          <div class="input">
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your Name" name="name" />
-          </div>
-          <div class="input">
-            <label for="email">Email:</label>
-            <input type="text" placeholder="Enter your Email" name="email" />
-          </div>
-          <div class="input">
-            <label for="age">Age:</label>
-            <input type="text" placeholder="Age" name="age" />
-          </div>
 
-          <!-- second part input select-->
-          <div class="input2">
-            <label for="ocupation-select"
-              >Which option best describes your current role?</label
-            >
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <h1>Survey Form</h1>
+  <main>
+    <header>
+      <h3>Let us know how we can improve freeCodeCamp</h3>
+      <form>
+        <!-- Firts parte input type text-->
+        <div class="control-container">
+          <div class="label"><label for="name">Name:</label></div>
+          <div class="control"><input type="text" placeholder="Enter your Name" name="name" /></div>
+        </div>
+        <div class="control-container">
+          <div class="label"><label for="email">Email:</label></div>
+          <div class="control"><input type="text" placeholder="Enter your Email" name="email" /></div>
+        </div>
+        <div class="control-container">
+          <div class="label"><label for="age">Age:</label></div>
+          <div class="control"><input type="text" placeholder="Age" name="age" /></div>
+        </div>
+
+        <!-- second part input select-->
+        <div class="control-container">
+          <div class="label"><label for="ocupation-select">Which option best describes your current role?</label></div>
+          <div class="control">
             <select class="select" name="ocupation-select">
               <option value="student">Student</option>
               <option value="job">Full Time Job</option>
@@ -44,41 +42,37 @@
               <option value="other">Other</option>
             </select>
           </div>
-          <!-- third part input radio-->
-          <div class="radio">
+        </div>
+        <!-- third part input radio-->
+        <div class="control-container">
+          <div class="label">
             <p>
               How likely is that you would recommend freeCodeCamp to a friend?
             </p>
-            <div>
-            <div>
-                <input class="prueba"
-                  type="radio"
-                  id="definitely"
-                  name="recommend"
-                  value="definitely"
-                  checked
-                />
-                <label  class="prueba" for="definitely">Definitely</label>
-              </div>
-              <div>
-                <input  class="prueba" type="radio" id="maybe" name="recommend" value="maybe" />
-                <label class="prueba" for="maybe">Maybe</label>
-              </div>
-              <div>
-                <input class="prueba"
-                  type="radio"
-                  id="notsure"
-                  name="recommend"
-                  value="notsure"
-                />
-                <label class="prueba" for="notsure">Not sure</label>
-              </div>
-              </div>
-            </div>
+          </div>
 
-          <!-- fourth part input select-->
-          <div class="inputexto">
+          <div class="control">
+            <div>
+              <input type="radio" id="definitely" name="recommend" value="definitely" checked />
+              <label for="definitely">Definitely</label>
+            </div>
+            <div>
+              <input type="radio" id="maybe" name="recommend" value="maybe" />
+              <label for="maybe">Maybe</label>
+            </div>
+            <div>
+              <input type="radio" id="notsure" name="notsure" value="notsure" />
+              <label for="notsure">Not sure</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth part input select-->
+        <div class="control-container">
+          <div class="label">
             <label for="ocupation-select">What do you like most in FCC:</label>
+          </div>
+          <div class="control">
             <select name="ocupation-select">
               <option value="opinion">Select an opinion</option>
               <option value="challenges">Challenges</option>
@@ -87,82 +81,81 @@
               <option value="open">Open source</option>
             </select>
           </div>
-          
-          <!-- fifth part input checkbox-->
-          <div class="check">
+        </div>
+
+        <!-- fifth part input checkbox-->
+        <div class="control-container">
+          <div class="label">
             <p>
               Things that should be improved in the future (Check all that
               apply):
             </p>
+          </div>
+          <div class="control">
             <div>
-              <div>
-                <input class="cuadrito" type="checkbox" id="frontend" name="frontend" checked />
-                <label class="cuadrito"  for="frontend">Front-end Projects</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="backend" name="backend" />
-                <label class="cuadrito"  for="backend">Back-end Projects</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="data" name="data" />
-                <label class="cuadrito"  for="data">Data Visualization</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="challenges" name="challenges" />
-                <label class="cuadrito"  for="challenges">Challenges</label>
-              </div>
-              <div>
-                <input class="cuadrito" 
-                  type="checkbox"
-                  id="open Source Community"
-                  name="open Source Community"
-                />
-                <label  class="cuadrito" for="open Source Community">Open Source Community</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="gitter" name="gitter" />
-                <label class="cuadrito"  for="gitter">Gitter help rooms</label>
-              </div>
-              <div>
-                <input  class="cuadrito" type="checkbox" id="video" name="video" />
-                <label class="cuadrito"  for="video">Videos</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="city" name="city" />
-                <label class="cuadrito"  for="city">City Meetups</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="wiki" name="wiki" />
-                <label class="cuadrito"  for="wiki">Wiki</label>
-              </div>
-              <div>
-                <input class="cuadrito"  type="checkbox" id="forum" name="forum" />
-                <label  class="cuadrito" for="forum">Forum</label>
-              </div>
-              <div>
-                <input class="cuadrito"   type="checkbox" id="additional" name="additional" />
-                <label class="cuadrito"   for="additional">Additional Courses</label>
-              </div>
+              <input type="checkbox" id="frontend" name="frontend" checked />
+              <label for="frontend">Front-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" id="backend" name="backend" />
+              <label for="backend">Back-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" id="data" name="data" />
+              <label for="data">Data Visualization</label>
+            </div>
+            <div>
+              <input type="checkbox" id="challenges" name="challenges" />
+              <label for="challenges">Challenges</label>
+            </div>
+            <div>
+              <input type="checkbox" id="open Source Community" name="open Source Community" />
+              <label for="open Source Community">Open Source Community</label>
+            </div>
+            <div>
+              <input type="checkbox" id="gitter" name="gitter" />
+              <label for="gitter">Gitter help rooms</label>
+            </div>
+            <div>
+              <input type="checkbox" id="video" name="video" />
+              <label for="video">Videos</label>
+            </div>
+            <div>
+              <input type="checkbox" id="city" name="city" />
+              <label for="city">City Meetups</label>
+            </div>
+            <div>
+              <input type="checkbox" id="wiki" name="wiki" />
+              <label for="wiki">Wiki</label>
+            </div>
+            <div>
+              <input type="checkbox" id="forum" name="forum" />
+              <label for="forum">Forum</label>
+            </div>
+            <div>
+              <input type="checkbox" id="additional" name="additional" />
+              <label for="additional">Additional Courses</label>
             </div>
           </div>
-          <!--sixth part input text-->
-          <div class="inputtax">
-            <div class="pregunta">
-              <label for="story">Any Comments or Suggestions?</label>
-            </div>
-            <div class="respuesta">
-              <textarea id="story" 
-              name="story" rows="5" cols="33" placeholder="Enter your comment here..."> </textarea>
-            </div>
+        </div>
+        <!--sixth part input text-->
+        <div class="control-container">
+          <div class="label label-top">
+            <label for="story">Any Comments or Suggestions?</label>
           </div>
-          <!--submit -->
-          <div class="central">
-            <button class="button" type="button">
-              Submit
-            </button>
+          <div class="control">
+            <textarea id="story" name="story" rows="5" cols="33" placeholder="Enter your comment here..."> </textarea>
           </div>
-        </form>
-      </header>
-    </main>
-  </body>
+        </div>
+        <!--submit -->
+        <div class="container-button">
+          <button class="submit-button" type="button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </header>
+  </main>
+</body>
+
 </html>
